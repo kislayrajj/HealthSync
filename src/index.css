@@ -5,14 +5,14 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #FFF1CA;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
+} */
+/* 
 a {
   font-weight: 500;
   color: #646cff;
@@ -69,6 +69,10 @@ button:focus-visible {
 
 @import "tailwindcss";
 
+:root{
+    background-color: #FFF2EB;
+
+}
 .center{
   display: flex;
   align-items: center;
