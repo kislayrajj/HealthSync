@@ -38,7 +38,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <div className="absolute left-[2%] font-bold lg:text-lg hover:scale-115 duration-300 ease-in-out hover:text-pink-500">
+        <div className="absolute left-[2%] font-bold lg:text-lg hover:scale-115 duration-300 ease-in-out hover:text-pink-600">
           HealthSync
         </div>
         <div
