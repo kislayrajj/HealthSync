@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isBurger, setIsBurger] = useState(true);
+  const [isBurger, setIsBurger] = useState(false);
   const navbarContents = [
     { name: "Home", route: "/" },
     { name: "About", route: "/about" },
@@ -38,13 +38,13 @@ const Navbar = () => {
           )}
         </div>
 
-        <div className="absolute left-[2%] font-bold lg:text-lg">
+        <div className="absolute left-[2%] font-bold lg:text-lg hover:scale-115 duration-300 ease-in-out hover:text-pink-500">
           HealthSync
         </div>
         <div
           className={`absolute  top-0 right-[25px] md:relative ${
             isBurger ? "block" : "!hidden"
-          } md:block bg-pink-600 opacity-90 text-white p-4 md:p-2 rounded-md md:w-1/2 center lg:text-lg`}>
+          } md:!flex bg-pink-600 opacity-90 text-white p-4 md:p-2 rounded-md md:w-1/2 center lg:text-lg`}>
           <ul className={`md:flex  mx-auto gap-8 font-semibold`}>
             {navbarContents?.map((navOption, idx) => (
               <li key={idx}>
